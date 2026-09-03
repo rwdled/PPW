@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Phantom Thief Dossier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="bg-texture" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud-left">SHIBUYA · <b id="hud-date">—</b></div>
+    <nav class="hud-nav" id="hud-nav">
+      <a href="#profile">Profile</a>
+      <a href="#confidants">Confidants</a>
+      <a href="#requests">Requests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hud-toggle" id="hud-toggle" aria-label="Open menu" aria-expanded="false">MENU</button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <p class="eyebrow">Arcana: Fool — the journey begins</p>
+      <h1 class="hero-name">Your Name Here</h1>
+      <p class="hero-role">[ Your role — e.g. Software Engineer, Illustrator, Product Designer ]</p>
+      <p class="hero-line">[ One or two sentences that introduce who you are and what drives you. This line is the first thing a visitor reads, so make it count. ]</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#requests">View Requests</a>
+        <a class="btn btn-ghost" href="#contact">Send a Calling Card</a>
+      </div>
+    </section>
+
+    <section class="panel" id="profile">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <img class="banner" src="assets/img/banner.jpg" alt="" style="object-position:center 15%;">
+          <h2>Profile</h2><span class="idx">01</span>
+        </div>
+        <div class="profile-grid">
+          <div class="portrait-frame">
+            <svg class="mask-icon" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 30 C2 14 22 6 50 6 C78 6 98 14 98 30 C98 46 80 58 62 52 C56 50 52 44 50 44 C48 44 44 50 38 52 C20 58 2 46 2 30 Z" stroke="#f2ede4" stroke-width="2.5"/>
+              <circle cx="27" cy="28" r="7" stroke="#f2ede4" stroke-width="2.5"/>
+              <circle cx="73" cy="28" r="7" stroke="#f2ede4" stroke-width="2.5"/>
+            </svg>
+            <p class="cap">No photo on file<br>— add your own —</p>
+          </div>
+          <div class="profile-body">
+            <p class="bio">[ Write two or three sentences about your background: where you've worked or studied, what you care about, and what makes <em>your</em> approach different from anyone else's. ]</p>
+            <div class="stats">
+              <div class="stat-row"><span class="stat-name">Knowledge</span><span class="stat-track"><span class="stat-fill" style="--val:78%"></span></span><span class="stat-num">78</span></div>
+              <div class="stat-row"><span class="stat-name">Guts</span><span class="stat-track"><span class="stat-fill" style="--val:64%"></span></span><span class="stat-num">64</span></div>
+              <div class="stat-row"><span class="stat-name">Proficiency</span><span class="stat-track"><span class="stat-fill" style="--val:88%"></span></span><span class="stat-num">88</span></div>
+              <div class="stat-row"><span class="stat-name">Kindness</span><span class="stat-track"><span class="stat-fill" style="--val:70%"></span></span><span class="stat-num">70</span></div>
+              <div class="stat-row"><span class="stat-name">Charm</span><span class="stat-track"><span class="stat-fill" style="--val:55%"></span></span><span class="stat-num">55</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="confidants">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <img class="banner" src="assets/img/banner.jpg" alt="" style="object-position:center 55%;">
+          <h2>Confidants</h2><span class="idx">02</span>
+        </div>
+        <div class="confidant-grid">
+          <article class="confidant-card">
+            <span class="confidant-arcana">Arcana · Magician</span>
+            <h3 class="confidant-title">[ Skill Area ]</h3>
+            <p class="confidant-desc">[ Describe a skill or craft you've built real depth in — languages, tools, techniques. ]</p>
+            <div class="pips"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+            <div class="tags"><span class="tag">Tag</span><span class="tag">Tag</span><span class="tag">Tag</span></div>
+          </article>
+          <article class="confidant-card">
+            <span class="confidant-arcana">Arcana · Star</span>
+            <h3 class="confidant-title">[ Skill Area ]</h3>
+            <p class="confidant-desc">[ A second area of strength — design, writing, research, whatever defines your work. ]</p>
+            <div class="pips"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+            <div class="tags"><span class="tag">Tag</span><span class="tag">Tag</span></div>
+          </article>
+          <article class="confidant-card">
+            <span class="confidant-arcana">Arcana · Hierophant</span>
+            <h3 class="confidant-title">[ Skill Area ]</h3>
+            <p class="confidant-desc">[ How you work with others — mentoring, leading, collaborating, teaching. ]</p>
+            <div class="pips"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+            <div class="tags"><span class="tag">Tag</span><span class="tag">Tag</span><span class="tag">Tag</span></div>
+          </article>
+          <article class="confidant-card">
+            <span class="confidant-arcana">Arcana · Chariot</span>
+            <h3 class="confidant-title">[ Skill Area ]</h3>
+            <p class="confidant-desc">[ What gets things over the finish line for you — execution, drive, follow-through. ]</p>
+            <div class="pips"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+            <div class="tags"><span class="tag">Tag</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="requests">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <img class="banner" src="assets/img/banner.jpg" alt="" style="object-position:center 80%;">
+          <h2>Requests</h2><span class="idx">03</span>
+        </div>
+        <div class="request-board">
+          <article class="request-card">
+            <span class="request-stamp">Clear!</span>
+            <div class="request-meta">Request 01</div>
+            <h3 class="request-title">[ Project Name ]</h3>
+            <div class="request-row"><b>Target:</b> [ the problem you solved ]</div>
+            <div class="request-row"><b>Reward:</b> [ the outcome or impact ]</div>
+            <p class="request-desc">[ A short paragraph on what you built, the tools you used, and why it mattered. ]</p>
+            <a class="request-link" href="#">View case file →</a>
+          </article>
+          <article class="request-card">
+            <span class="request-stamp">Clear!</span>
+            <div class="request-meta">Request 02</div>
+            <h3 class="request-title">[ Project Name ]</h3>
+            <div class="request-row"><b>Target:</b> [ the problem you solved ]</div>
+            <div class="request-row"><b>Reward:</b> [ the outcome or impact ]</div>
+            <p class="request-desc">[ A short paragraph on what you built, the tools you used, and why it mattered. ]</p>
+            <a class="request-link" href="#">View case file →</a>
+          </article>
+          <article class="request-card">
+            <span class="request-stamp" style="background:var(--panel-raised);color:var(--paper-dim);">In Progress</span>
+            <div class="request-meta">Request 03</div>
+            <h3 class="request-title">[ Project Name ]</h3>
+            <div class="request-row"><b>Target:</b> [ the problem you're solving now ]</div>
+            <div class="request-row"><b>Reward:</b> [ what success looks like ]</div>
+            <p class="request-desc">[ A short paragraph on what's underway and what you're learning from it. ]</p>
+            <a class="request-link" href="#">View case file →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel contact" id="contact">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <img class="banner" src="assets/img/banner.jpg" alt="" style="object-position:center 35%;">
+          <h2>Contact</h2><span class="idx">04</span>
+        </div>
+        <div class="card-wrap">
+          <div class="calling-card">
+            <div class="calling-kicker">A calling card, for you</div>
+            <div class="calling-headline">We know you're looking for someone who can [ do the thing you do best ].</div>
+            <p class="calling-body">[ A closing line in your own voice — what kind of work, project, or conversation you're open to right now. ]</p>
+            <p class="calling-sign">— Your Name, Phantom Thief</p>
+          </div>
+          <div class="link-panel">
+            <a class="link-row" href="mailto:you@example.com"><span>Email</span><span class="arrow">›</span></a>
+            <a class="link-row" href="#"><span>GitHub</span><span class="arrow">›</span></a>
+            <a class="link-row" href="#"><span>LinkedIn</span><span class="arrow">›</span></a>
+            <a class="link-row" href="#"><span>Resume</span><span class="arrow">›</span></a>
+          </div>
+        </div>
+        <div class="sticker-wrap">
+          <img class="sticker-sheet" src="assets/img/sticker-sheet.jpg" alt="Persona 5 style sticker sheet, decorative">
+        </div>
+        <p class="sticker-note">Take your time</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">Built by <span>Your Name</span> · <span id="hud-year"></span> · No hearts were stolen without consent</footer>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
