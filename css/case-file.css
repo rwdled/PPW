@@ -1,0 +1,32 @@
+/* ---------- Case File page ---------- */
+.case-hero{ padding-top:2.6rem; padding-bottom:1.6rem; }
+.back-link{
+  display:inline-block; font-family:'Oswald',sans-serif; font-weight:600; font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase; text-decoration:none; color:var(--paper-dim);
+  border-bottom:1px solid var(--line-strong); padding-bottom:2px; margin-bottom:1.6rem;
+  transition:color .15s ease, border-color .15s ease;
+}
+.back-link:hover{ color:var(--red-bright); border-color:var(--red-bright); }
+.case-stamp{ position:static; transform:rotate(0); width:auto; display:inline-block; padding:.25rem .7rem; margin-bottom:.9rem; box-shadow:none; }
+.case-title{
+  font-family:'Anton',sans-serif; font-size:clamp(2.2rem,6vw,3.6rem); text-transform:uppercase;
+  letter-spacing:.01em; transform:skewX(-6deg); color:var(--paper); margin:.3rem 0 .4rem;
+  text-shadow:3px 3px 0 var(--red-deep), 6px 6px 0 rgba(0,0,0,.55);
+}
+.case-sub{ font-family:'Oswald',sans-serif; font-weight:500; font-size:1.05rem; color:var(--paper-dim); border-left:3px solid var(--red-bright); padding-left:.7rem; margin:0; }
+
+.case-body{ padding-top:0; }
+.case-grid{ display:grid; grid-template-columns:1fr 260px; gap:2.6rem; align-items:start; }
+@media (max-width:760px){ .case-grid{ grid-template-columns:1fr; } }
+.case-h2{
+  font-family:'Anton',sans-serif; font-size:1.15rem; text-transform:uppercase; letter-spacing:.02em;
+  color:var(--red-bright); transform:skewX(-4deg); margin:2.2rem 0 .6rem;
+}
+.case-main .case-h2:first-child{ margin-top:0; }
+.case-text{ color:var(--paper-dim); font-size:1.02rem; max-width:62ch; margin:0; }
+
+.case-side{ background:var(--panel); border:1px solid var(--line); padding:1.4rem 1.3rem; display:flex; flex-direction:column; gap:1.1rem; }
+.case-side-block{ display:flex; flex-direction:column; gap:.35rem; }
+.case-side-label{ font-family:'Oswald',sans-serif; font-weight:600; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--paper-faint); }
+.case-side-value{ font-family:'Oswald',sans-serif; font-weight:500; font-size:.95rem; color:var(--paper); }
+.case-side .tags{ display:flex; flex-wrap:wrap; gap:.4rem; }

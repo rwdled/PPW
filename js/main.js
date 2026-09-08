@@ -18,7 +18,7 @@
     });
   }
 
-  var links=Array.prototype.slice.call(document.querySelectorAll('.hud-nav a'));
+  var links=Array.prototype.slice.call(document.querySelectorAll('.hud-nav a')).filter(function(a){ return a.getAttribute('href').charAt(0)==='#'; });
   var sections=links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
   if('IntersectionObserver' in window && sections.length){
     var obs=new IntersectionObserver(function(entries){
