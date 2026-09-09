@@ -1,4 +1,36 @@
 (function(){
+  var intro=document.getElementById('intro-screen');
+  var music=document.getElementById('bg-music');
+  var muteBtn=document.getElementById('hud-mute');
+
+  if(intro){
+    document.body.classList.add('intro-lock');
+    var dismissIntro=function(){
+      if(intro.classList.contains('is-hidden')) return;
+      intro.classList.add('is-hidden');
+      document.body.classList.remove('intro-lock');
+      if(music){
+        music.volume=0.6;
+        music.play().catch(function(){});
+      }
+      intro.removeEventListener('click', dismissIntro);
+      intro.removeEventListener('keydown', onIntroKey);
+      setTimeout(function(){ intro.hidden=true; }, 650);
+    };
+    var onIntroKey=function(e){
+      if(e.key==='Enter' || e.key===' '){ e.preventDefault(); dismissIntro(); }
+    };
+    intro.addEventListener('click', dismissIntro);
+    intro.addEventListener('keydown', onIntroKey);
+  }
+
+  if(muteBtn && music){
+    muteBtn.addEventListener('click', function(){
+      music.muted=!music.muted;
+      muteBtn.setAttribute('aria-pressed', music.muted ? 'true' : 'false');
+    });
+  }
+
   var days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   var d=new Date();
   var el=document.getElementById('hud-date');
